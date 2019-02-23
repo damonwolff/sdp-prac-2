@@ -11,7 +11,7 @@ namespace Problems {
             Console.WriteLine(Prefix(input));
         }
 
-        static string Prefix(string input) {
+        public static string Prefix(string input) {
             int words = 0;
             int length = input.Length;
             bool noWords = true;
@@ -19,7 +19,7 @@ namespace Problems {
             bool looking = true; // currently looking for a word
 
             for(int i = 0; i< length; i++) {
-                Console.WriteLine("curr = " + c[i]);
+                
                 if(c[i] != ' ' && noWords == true) {//checks whether or not there is at least one word
                     noWords = false;
                 }
